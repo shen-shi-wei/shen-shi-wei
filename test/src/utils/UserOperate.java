@@ -1,9 +1,8 @@
+package utils;
 
 import Exception.registerexection.*;
-import bean.Users;
 import org.dom4j.DocumentException;
-import bean.UserData;
-import bean.userDataMysql;
+
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -12,7 +11,7 @@ import java.util.regex.Pattern;
 
 public class UserOperate {
 
-    userDataMysql ud = new userDataMysql();
+    Method method= new Method();
 
     public static  final  String REGEX_MOBILE = "[1][38]\\d([-]{0,1})\\d{4}([-]{0,1})\\d{4}";
     public static  final  String REGEX_EMAIL = "^([a-z0-9A-Z]+[-|_|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$";
@@ -29,13 +28,13 @@ public class UserOperate {
         if (!Pattern.matches(REGEX_NICKNAME,nickname)){
             throw new NicknameException();
         }
-        ResultSet resultSet = ud.select();
-        while (resultSet.next()){
-            if (resultSet.getString(3).equals(username)){
+        List<User> users = method.queryall();
+        for (User user : users) {
+            if (user.getUname().equals(username)){
                 throw new ExistException();
             }
         }
-        ud.add(nickname,username,password);
+        method.add(nickname,username,password);
         System.out.println("注册成功");
     }
 
