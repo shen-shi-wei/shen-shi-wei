@@ -1,0 +1,93 @@
+.head{
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+    height: 70px;
+    background-color: ghostwhite;
+}
+.head-lcon-center{
+    width: 1200px;
+    margin: auto;
+}
+.head-lcon-left{
+    float: left;
+}
+.head-lcon-left-img{
+    width: 120px;
+    height: 30px;
+}
+.head-lcon-left-p{
+    margin: 10px 0px 0px 10px;
+    float: right;
+}
+.head-lcon-right{
+    margin: 10px 5px 0px 0px;
+    float: right;
+}
+.body{
+    width: 100%;
+    height: 100%;
+    background-color: gainsboro;
+}
+.body-center{
+    width: 915px;
+    height: 590px;
+    margin: auto;
+}
+.body-center-left{
+    float: left;
+}
+.body-center-left-img{
+    width: 440px;
+    height: 300px;
+    float: left;
+    margin: 160px 10px 0px 0px;
+}
+.body-center-right{
+    width: 410px;
+    height: 480px;
+    float: right;
+    margin: 100px 0px 0px 10px;
+    background-color: aliceblue;
+}
+.denglu{
+    width: 410px;
+    height: 90px;
+    padding: 25px 0px 0px 100px;
+}
+.denglu-h3{
+    font-size: 30px;
+}
+.input{
+
+}
+.username{
+    width: 320px;
+    height: 50px;
+    margin: 10px 0px 20px 0px;
+    margin: 20px 40px 20px 40px;
+}
+.password{
+    width: 320px;
+    height: 50px;
+    margin: 10px 0px 20px 0px;
+    margin: 20px 40px 20px 40px;
+}
+.denglubutton{
+    width: 330px;
+    height: 55px;
+    margin: 20px 40px 20px 40px;
+    font-size: 20px;
+}
+.body-center-right-foot{
+    width: 325px;
+    height: auto;
+    margin: 20px 40px 20px 40px;
+}
+.register-p-lfet{
+    font-size: 13px;
+    float: left;
+}
+.register-p-right{
+    font-size: 13px;
+    float: right;
+}
